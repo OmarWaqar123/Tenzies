@@ -1,0 +1,173 @@
+/* * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+} */
+
+.game-body {
+    margin: 0;
+    background: #0B2434;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.flowers {
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    background-color: #F5F5F5;
+    width: 450px;
+    height: 450px;
+    position:fixed;
+    top: 55%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.die-comp {
+    background-color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 22px;
+    font-family: karla; 
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    cursor: pointer;
+}
+
+.die-comp-held {
+    background-color: #59E391;
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 22px;
+    font-family: karla; 
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    cursor: pointer;
+    
+}
+
+.die-dad {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    /* background-color: pink; */
+    margin-right: 3%;
+    transform: translateY(20%);
+    
+      
+}
+
+.roll {
+    position: absolute;
+    top: 72%;
+    width: 93px;
+    height: 35.7px;
+    background-color: #5035FF;
+    color: white;
+    border-radius: 4px;
+    border:none;
+    box-shadow: 0px 4px 4.3px rgba(0,0,0,0.27);
+    cursor: pointer;
+    font-family: karla;
+    font-size: 1.01rem;
+}
+
+.roll:focus {
+    outline: none;
+}
+
+.roll:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0,0,0,0.7);
+}
+
+.tenz-head {
+    color: #2B283A;
+    font-size: 28px;
+    position: absolute;
+    top: 36px;
+    margin-right: 10px;
+    font-family: "Karla";
+}
+
+.tenz-para {
+    max-width: 280px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    position: absolute;
+    top:95px;
+    letter-spacing: 0.25px;
+    
+}
+
+.clock {
+    background-color: white;
+    /* z-index: 9999; */
+    font-family: 'Roboto Mono';
+    min-width: 6rem;
+    height: 2.2rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4.3px rgba(0,0,0,0.20); 
+    letter-spacing: -1.3px;
+    font-size: 15px;
+    position: absolute;
+    top: 8%;
+    left: 70% 
+}
+
+.best-dad {
+    z-index: 9999;
+    background-color: pink;
+    display: flex;
+    min-width:10rem;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    font-family: Karla;
+    background-color: #F5F5F5;
+    position: fixed;
+    top: 87%;
+    margin-right: 8px;     
+}
+
+
+.best {
+    margin-left: 7.5px;
+    background-color: white;
+    border-radius: 5px;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 5rem;
+    box-shadow: 0px 4px 4.3px rgba(0,0,0,0.20); 
+    font-family: Roboto Mono;
+    letter-spacing: -2px;
+    font-size: 16px;
+}
